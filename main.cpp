@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 		}
 	};
 
-	Eigen::MatrixXd V,U;
+	Eigen::Matrix<double, -1, -1, Eigen::RowMajor> V,U;
 	Eigen::MatrixXi F;
 	long sel = -1;
 	Eigen::RowVector3f last_mouse;

@@ -20,10 +20,11 @@ namespace igl
 //   U  #V by dim list of current positions (see output)
 // Outputs:
 //   U  #V by dim list of new positions (see input)
+
 void arap_single_iteration(
   const igl::min_quad_with_fixed_data<double> & data,
   const Eigen::SparseMatrix<double> & K,
   const Eigen::MatrixXd & bc,
-  Eigen::MatrixXd & U);
+  Eigen::Matrix<double, -1, -1, Eigen::RowMajor> & U);
 
 #endif
