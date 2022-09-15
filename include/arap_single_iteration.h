@@ -24,7 +24,7 @@ namespace igl
 void arap_single_iteration(
   const igl::min_quad_with_fixed_data<double> & data,
   const Eigen::SparseMatrix<double> & K,
-  const Eigen::MatrixXd & bc,
+  Eigen::Matrix<double, -1, -1, Eigen::RowMajor> & bc,
   Eigen::Matrix<double, -1, -1, Eigen::RowMajor> & U);
 
 #endif

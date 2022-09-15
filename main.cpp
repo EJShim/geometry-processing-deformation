@@ -17,7 +17,7 @@
 struct State
 {
 	// Rest and transformed control points
-	Eigen::MatrixXd CV, CU;
+	Eigen::Matrix<double, -1, -1, Eigen::RowMajor> CV, CU;
 	bool placing_handles = true;
 } s;
 
