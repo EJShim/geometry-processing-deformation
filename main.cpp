@@ -218,6 +218,8 @@ int main(int argc, char *argv[])
 				std::cout << "precompute deformation" << std::endl;
 				biharmonic_precompute(V,F,b,biharmonic_data);
 				arap_precompute(V,F,b,arap_data,arap_K);
+
+				std::cout << b << std::endl;
 			}
 			break;
 		default:
